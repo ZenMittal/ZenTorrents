@@ -1,0 +1,149 @@
+
+body {
+  min-width: 250px;
+  margin: 0px;
+  font-family: Segoe UI, Arial, sans-serif;
+  font-size: 13px;
+  color: #545454;
+/*  background-color: #f8f6f2;
+  background-image: url(background.png);*/
+
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+#support {
+  transform: scale(0.95);
+}
+
+.option {
+  transform: scale(1.15);
+  max-width: 600px;
+}
+
+#options-page {
+  margin-bottom: 70px;
+}
+
+#porn-ops {
+  margin: 600px;
+  max-width: 900px;
+  border: 2px solid #bada55;
+/*  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;*/
+  padding: 20px 100px;
+  margin: 0;
+  align-self: center;
+
+}
+
+#user-alert {
+  transition: all ease 0.5s;
+  margin-left: 30px;
+}
+
+.poplink {
+  color: #545454;
+  text-decoration: none;
+}
+
+.poplink:hover {
+  color: #545454;
+  text-decoration: none;
+}
+
+.emoji {
+  width: 35px;
+}
+
+.emoji1 {
+  width: 30px;
+  margin-right: -8;
+}
+
+.people {
+  width: 56px;
+}
+
+
+.jumbotron {
+  margin-top: 0;
+  padding-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+
+.btn {
+  width: 85px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.share {
+  width: 50px;
+  border-radius: 8px;
+  padding: 0 5px;
+}
+
+.share:hover {
+  background: #fff;  /* fallback for old browsers */
+}
+
+header {
+  height: 45px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e1ddd8;
+  background-image: url(background-main.png);
+  background: #d8d3cd;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ECE9E6, #d8d3cd);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ECE9E6, #d8d3cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#logo {
+	width: 56px;
+	display: block;
+  position: relative;
+  top: 15px;
+  margin: 0px auto;
+}
+
+footer {
+  cursor: pointer;
+  padding: 10px 35px;
+  border-top: 1px solid #e1ddd8;
+  background-image: url(background-main.png);
+  background: #d8d3cd;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ECE9E6, #d8d3cd);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ECE9E6, #d8d3cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+footer:hover {
+  background: #ffffff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ECE9E6, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ECE9E6, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+footer .icon {
+  background-position: -50px -65px;
+}
+
+#blackWords {
+  width: 70%;
+  min-width: 300px;
+}
+
+#whiteWords {
+  width: 70%;
+  min-width: 300px;
+}

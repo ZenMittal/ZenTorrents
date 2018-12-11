@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+
+  "name": "ZenTorrents - Porn Torrents Blocker",
+  "description": "Smartly blocks all the annoying porn results on all torrent search engine sites. Good safety from porn for you and your loved ones.",
+  "version": "1.2.0",
+  "options_ui": {
+  "page": "options.html",
+  "chrome_style": true,
+  "open_in_tab": true
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons" : {
+    "64" : "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "https://*/*",
+    "contextMenus",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["jquery.js", "blockedCompanies.js", "blockedStars.js", "blockedWords.js", "blockedSingles.js", "noCheckList.js", "allowedWords.js", "script.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+
+  ]
+}
