@@ -74,12 +74,19 @@
          <br>
 
          <div class="option toggle-transparent">
-            <label for="transparent">Transparent Mode :</label>
-            <input type="checkbox" name="transparent" id="toggle-transparent">
-            <br>
-            <h5 class="help-block"><strong>Checked:</strong> Porn results will be desplayed 
+            <form id="toggle-transparent">
+               <div>
+                  <label for="highlight-radio"><strong>Highlight porn results</strong></label>
+                  <input name="transparent" type="radio" value="highlight" id="highlight-radio">
+               </div>
+               <div>
+                  <label for="delete-radio"><strong>Delete porn results</strong></label>
+                  <input name="transparent" type="radio" value="delete" id="delete-radio">
+               </div>
+            </form>
+            <h5 class="help-block"><strong>Highlight:</strong> Porn results will be desplayed 
                (but will be non-clickable and highlighted red.) <br>
-               <strong>Unchecked:</strong> Porn results will not be displayed at all. (Recommended)</h5>
+               <strong>Delete:</strong> Porn results will not be displayed at all. (Recommended)</h5>
          </div>
 
          <br>

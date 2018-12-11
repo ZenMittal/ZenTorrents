@@ -24,6 +24,20 @@ $("#ZenTorrentsRate").html(
    '.png">'
 );
 
+function toggleDisable () {
+   if (document.querySelector("#filter-porn").checked === false) {
+      $("#delete-radio")[0].disabled = true;
+      $("#highlight-radio")[0].disabled = true;
+      document.querySelector(".toggle-transparent").style.color =
+         "rgba(0,0,0,0.50)";
+   } else {
+      $("#delete-radio")[0].disabled = false;
+      $("#highlight-radio")[0].disabled = false;
+      document.querySelector(".toggle-transparent").style.color =
+         "rgba(0,0,0,0.68)";
+   }
+}
+
 function saveOptions() {
    var filterPorn = document.querySelector("#filter-porn").checked;
    var toggleTransparent = document.querySelector("#toggle-transparent").checked;
@@ -61,29 +75,9 @@ function restoreOptions() {
 
 function updateDisabling() {
    // Disabling toggle-transparent if porn-filter is unchecked
-   setTimeout(function () {
-      if (document.querySelector("#filter-porn").checked === false) {
-         $("#toggle-transparent")[0].disabled = true;
-         document.querySelector(".toggle-transparent").style.color =
-            "rgba(0,0,0,0.50)";
-      } else {
-         $("#toggle-transparent")[0].disabled = false;
-         document.querySelector(".toggle-transparent").style.color =
-            "rgba(0,0,0,0.68)";
-      }
-   }, 400);
+   setTimeout(toggleDisable, 400);
 
-   document.querySelector("#filter-porn").addEventListener("change", function () {
-      if (document.querySelector("#filter-porn").checked === false) {
-         $("#toggle-transparent")[0].disabled = true;
-         document.querySelector(".toggle-transparent").style.color =
-            "rgba(0,0,0,0.50)";
-      } else {
-         $("#toggle-transparent")[0].disabled = false;
-         document.querySelector(".toggle-transparent").style.color =
-            "rgba(0,0,0,0.68)";
-      }
-   });
+   document.querySelector("#filter-porn").addEventListener("change", toggleDisable);
 }
 
 // Calling all functions;
