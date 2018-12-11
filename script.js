@@ -58,7 +58,7 @@ chrome.storage.sync.get(
       filter_porn: true,
       make_transparent: true
    },
-   // what is this? lol should've added a comment here before
+   // what is this? lol should've added a comment here when I wrote this
    items => {
       // Retrieveing setting from options.html
       filterPorn = items.filter_porn;
