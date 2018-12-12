@@ -58,6 +58,7 @@ function saveOptions() {
    );
 }
 
+// used to render saved options to user
 function restoreOptions() {
    // Setting default values as all true (if not provided).
    chrome.storage.sync.get(

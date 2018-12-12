@@ -104,12 +104,12 @@ chrome.storage.sync.get(
                         .parent()
                         .css("background-color") != "rgb(254, 254, 254)"
                   ) {
-                     // console.log(`checking fot block at ${i} with background-color ${$($(resultArea[r])[i]).parent().css("background-color")}`)
+                     // console.log(`checking for block at ${i} with background-color ${$($(resultArea[r])[i]).parent().css("background-color")}`)
                      for (var j = 0; j < totalBlockedWords.length; j++) {
                         if ($(resultArea[r])[i].innerText.match(totalBlockedWords[j])) {
                            $($(resultArea[r])[i])
                               .parent()
-                              .css("background", "#FFEFE9");
+                              .css("background", "#FFBFB9");
                            $($(resultArea[r])[i])
                               .parent()
                               .find("a")
@@ -131,7 +131,7 @@ chrome.storage.sync.get(
                         .parent()
                         .css("background-color") != "rgb(254, 254, 254)"
                   ) {
-                     // console.log(`checking fot block at ${i}`)
+                     // console.log(`checking for block at ${i}`)
                      for (var j = 0; j < totalBlockedWords.length; j++) {
                         if ($(resultArea[r])[i].innerText.match(totalBlockedWords[j])) {
                            $($(resultArea[r])[i])
