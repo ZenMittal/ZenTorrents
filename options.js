@@ -59,16 +59,20 @@ function saveOptions() {
 }
 
 function restoreOptions() {
-   // Setting default values as all true (thus checked).
+   // Setting default values as all true (if not provided).
    chrome.storage.sync.get(
       {
          filter_porn: true,
          make_transparent: true
       },
       items => {
-         console.log(items.filter_porn);
          document.querySelector("#filter-porn").checked = items.filter_porn;
-         document.querySelector("#toggle-transparent").checked = items.make_transparent;
+         if (items.make_transparent == true){
+            document.querySelector("#highlight-radio").checked = true;
+         }
+         else {
+            document.querySelector("#delete-radio").checked = true;
+         }
       }
    );
 }

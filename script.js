@@ -54,6 +54,7 @@ var resultArea = [
 
 // Main code runs inside chrome storage because of storage API being asynchronous.
 chrome.storage.sync.get(
+   // Setting default values as all true (if not provided).
    {
       filter_porn: true,
       make_transparent: true
