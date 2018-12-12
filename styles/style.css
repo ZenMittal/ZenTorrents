@@ -16,6 +16,12 @@ body {
 
 label {
   font-size: 1.5rem;
+  height: 35px;
+  width: 160px;
+}
+
+label, #highlight-radio, #delete-radio, #filter-porn {
+  margin: 0;
 }
 
 #support {
