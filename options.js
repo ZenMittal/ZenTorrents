@@ -24,6 +24,7 @@ $("#ZenTorrentsRate").html(
    '.png">'
 );
 
+// Disables toggle-transparent if porn-filter is unchecked
 function toggleDisable () {
    if (document.querySelector("#filter-porn").checked === false) {
       $("#delete-radio")[0].disabled = true;
@@ -40,7 +41,7 @@ function toggleDisable () {
 
 function saveOptions() {
    var filterPorn = document.querySelector("#filter-porn").checked;
-   var toggleTransparent = document.querySelector("#toggle-transparent").checked;
+   var toggleTransparent = document.querySelector("#highlight-radio").checked;
    console.log(filterPorn, toggleTransparent);
    chrome.storage.sync.set(
       {
@@ -67,8 +68,7 @@ function restoreOptions() {
       items => {
          console.log(items.filter_porn);
          document.querySelector("#filter-porn").checked = items.filter_porn;
-         document.querySelector("#toggle-transparent").checked =
-            items.make_transparent;
+         document.querySelector("#toggle-transparent").checked = items.make_transparent;
       }
    );
 }
