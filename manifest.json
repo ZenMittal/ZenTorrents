@@ -3,7 +3,7 @@
 
   "name": "ZenTorrents - Porn Torrents Blocker",
   "description": "Smartly blocks all the annoying porn results on all torrent search engine sites. Good safety from porn for you and your loved ones.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "options_ui": {
   "page": "options.html",
   "chrome_style": true,
