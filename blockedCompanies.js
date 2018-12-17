@@ -4,7 +4,7 @@ var blockedCompanies = [
 	/18YearsOld/ig,
 	/21EroticAnal/ig,
 	/21FootArt/ig,
-    /21Naturals/ig,
+   /21Naturals/ig,
 	/2ChicksSameTime/ig,
 	/40SomethingMag/ig,
 	/8thStreetLatinas/ig,

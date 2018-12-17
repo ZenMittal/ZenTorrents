@@ -47,7 +47,7 @@ var blockedWords = [
             /Harem/ig,
             /orgy/ig,
             /nude/ig,
-            //ig,
+            /Cumshot/ig,
             //ig,
             //ig,
             //ig,
