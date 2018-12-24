@@ -1,3 +1,4 @@
+// removed this background file option file for now
 chrome.contextMenus.create({
 
 	title: "Block all torrents containing \"%s\" ",
